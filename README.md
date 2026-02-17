@@ -29,7 +29,7 @@ algorithm/
 │   │   ├── 0805_List1/
 │   │   ├── 0813_Stack1/
 │   │   └── ...
-│   └── programmers/
+│   └── algo_study/
 │       └── ...
 │
 └── README.md
