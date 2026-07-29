@@ -11,3 +11,17 @@ def solution(sizes):
                 
         res *= max_num
     return res
+
+
+
+# --------------다른 풀이 ----------------
+# def solution(sizes):
+#     row = 0   # 행
+#     col = 0   # 열
+#     for a, b in sizes:
+#         if a < b:   # 정렬
+#             a, b = b, a
+#         row = max(row, a)
+#         col = max(col, b)
+#     return row * col
+    
