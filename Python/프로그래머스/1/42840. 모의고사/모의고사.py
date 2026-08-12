@@ -29,7 +29,12 @@ def solution(answers):
     
     if score3 == max_num:
         res.append(3)
-    
+
+    # -------- enumerate 사용 --------
+    # for idx, s in enumerate(score):
+    #     if s == max(score):
+    #         result.append(idx+1)
+            
     return res
 
 
