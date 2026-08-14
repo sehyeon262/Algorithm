@@ -11,7 +11,6 @@ def solution(s):
         # 닫는 괄호가 먼저 나오면 틀린거임
         if cnt < 0:
             return False   
-    if cnt == 0:
-        return True
-    else:
-        return False
+    
+    # 'cnt == 0' 자체가 True 또는 False가 되는 비교식이라 바로 반환 가능
+    return cnt == 0
