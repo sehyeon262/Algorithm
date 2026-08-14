@@ -1,36 +1,36 @@
-### 📚 Algorithm
+# Algorithm Problem Solving
 
-알고리즘 문제 풀이를 정리한 레포지토리입니다.
+Java와 Python으로 알고리즘 문제를 풀이하며 **문제 해결 역량을 꾸준히 기록하는 저장소**입니다.
 
-주로 백준(BOJ) 과 SWEA 문제를 풀이하며, 난이도별로 정리하고 있습니다.
+## Overview
 
----
+- **Languages:** Java, Python
+- **Platforms:** Baekjoon, Programmers, SWEA
+- **Focus:** 문제 분석, 알고리즘 선택, 시간·공간 복잡도 개선, 읽기 쉬운 코드 작성
 
-### 🗂 Directory Structure
+## Problem-Solving Approach
+
+각 문제는 다음 기준으로 풀이합니다.
+
+1. **문제의 입력 조건**과 **예외 상황**을 먼저 정리합니다.
+2. 가능한 알고리즘과 자료구조를 비교해 **적절한 풀이를 선택**합니다.
+3. **시간 복잡도**와 **공간 복잡도**를 검토합니다.
+4. **변수명과 로직을 명확하게 작성**하고, 필요한 경우 풀이를 개선합니다.
+
+## Repository Structure
+
+```text
+Algorithm/
+├─ 백준/             # 난이도별 문제 풀이
+├─ 프로그래머스/      # 레벨별 문제 풀이
+└─ SWEA/             # 난이도 및 과정별 문제 풀이
 ```
-Algorithm
- ┣ 📂 백준
- ┃ ┣ 📂 Bronze
- ┃ ┣ 📂 Silver
- ┃ ┗ 📂 Gold
- ┃
- ┣ 📂 SWEA
- ┃ ┣ 📂 D1
- ┃ ┣ 📂 D2
- ┃ ┗ 📂 algorithm_fundamentals
- ┃
- ┗ 📄 README.md
-```
 
----
+## What I Focus On
+- 제한 조건에 맞는 효율적인 알고리즘 설계
+- 다양한 자료구조의 적절한 활용
+- Java와 Python을 활용한 구현 역량 강화
+- 예외 케이스를 고려한 안정적인 코드 작성
+- 풀이 과정을 꾸준히 기록하고 개선하는 습관
 
-### 🛠 Tech
-- Python
-- Java
-
----
-
-### 🎯 Goal
-- 알고리즘 문제 풀이 기록
-- 문제 해결 능력 향상
-- 코딩 테스트 대비
+> 꾸준한 문제 풀이를 통해 논리적인 사고력과 구현 역량을 발전시키고 있습니다.
