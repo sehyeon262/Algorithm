@@ -7,8 +7,8 @@ def solution(brown, yellow):
     for row in range(N, 0, -1):
         if N % row == 0:
             col = N / row
-            # brown과 yellow 조건이 일치하다면
-            if (row * 2) + (col - 2) * 2 == brown and (row - 2) * (col - 2) == yellow:
+            # brown 조건이 일치하다면
+            if (row * 2) + (col - 2) * 2 == brown:
                 answer.extend([row, col])
                 break
     return answer
