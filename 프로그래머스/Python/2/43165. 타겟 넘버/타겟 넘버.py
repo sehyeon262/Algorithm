@@ -10,7 +10,7 @@ def solution(numbers, target):
                 answer += 1
             return
         
-        # 재귀 호출(더하는 길 + 빼는 길)
+        # 재귀 호출(더하는 길, 빼는 길)
         dfs(index + 1, now_sum + numbers[index])
         dfs(index + 1, now_sum - numbers[index])
         
