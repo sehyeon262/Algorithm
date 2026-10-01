@@ -1,0 +1,13 @@
+SELECT CATEGORY, PRICE AS MAX_PRICE, PRODUCT_NAME
+FROM FOOD_PRODUCT
+-- 서브쿼리 -> 카테고리별 최대 가격을 구함
+-- (CATEGORY, PRICE) -> 그 최대가격이 어느 카테고리의 최대가격인지 같이 비교
+WHERE (CATEGORY, PRICE) IN (
+    SELECT CATEGORY, MAX(PRICE)
+    FROM FOOD_PRODUCT
+    WHERE CATEGORY IN ('과자', '국', '김치', '식용유')
+    GROUP BY CATEGORY
+)
+ORDER BY MAX_PRICE DESC;
+
+
