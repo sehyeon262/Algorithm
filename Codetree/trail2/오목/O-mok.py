@@ -1,8 +1,5 @@
 board = [list(map(int, input().split())) for _ in range(19)]
 
-row = len(board)
-col = len(board[0])
-
 def check(x, y, num):
     # 상, 오른쪽 위 대각선, 우, 오른쪽 아래 대각선
     dx = [-1, -1, 0, 1]
@@ -13,7 +10,7 @@ def check(x, y, num):
         for j in range(1, 5):
             nx = dx[i] * j + x
             ny = dy[i] * j + y
-            if 0 <= nx < row and 0 <= ny < col:
+            if 0 <= nx < 19 and 0 <= ny < 19:
                 if board[nx][ny] == num:
                     cnt += 1
                 else:
@@ -26,8 +23,8 @@ def check(x, y, num):
 
 
 winner = 0
-for x in range(row):
-    for y in range(col):
+for x in range(19):
+    for y in range(19):
         if board[x][y]:
             res = check(x, y, board[x][y])
             if res:
