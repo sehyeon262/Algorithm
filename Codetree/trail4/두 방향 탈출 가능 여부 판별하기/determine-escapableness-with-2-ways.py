@@ -21,7 +21,5 @@ def dfs(x, y):
                     return 1
     
     return 0
-if grid[0][0] == 1:
-    print(dfs(0, 0))
-else:
-    print(0)
+
+print(dfs(0, 0))
