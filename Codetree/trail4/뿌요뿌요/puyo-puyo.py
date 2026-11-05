@@ -27,9 +27,10 @@ for i in range(n):
         cnt = 0
         if not visited[i][j]:
             res = dfs(i, j, grid[i][j])
-            # 터지는 블럭수가 있다면
+            # 4개 이상일 때 블럭이 터짐 -> boom  + 1
             if res + 1 >= 4:    
                 boom += 1
+            # 최대 블럭 크기는 4개 이상일때와 상관없으므로.
             max_n = max(max_n, res + 1)
 
 print(boom, max_n)
